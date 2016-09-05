@@ -4,6 +4,6 @@
 	</head>
 	<body>
 		<h1>Sherwood Wang's Technical Notes</h1>
-		<a href="html/test.html"><h2>Test</h2></a>
+		<a tal:repeat="(url, title) index" tal:attributes="href url"><h2 tal:content="title"></h2></a>
 	</body>
 </html>
